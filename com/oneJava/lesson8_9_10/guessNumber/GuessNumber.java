@@ -13,11 +13,12 @@ public class GuessNumber {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
     }
+
     public int attempts = 0;
     public int convertedAttempts = 10;
 
     public void play() {
-        str.replace(0,str.length(),"");
+        str.replace(0, str.length(), "");
         thoughtNumber = (int) (Math.random() * 100);
         System.out.println("Подсказка, число загаданное компьютером равно " + thoughtNumber);
         setMasNullForAll(new Player[]{playerOne, playerTwo});
@@ -29,7 +30,7 @@ public class GuessNumber {
                         + playerTwo.getName() + ":" + Arrays.toString(playerTwo.getMas()) + "\n----------------------");
                 setMasNullForAll(new Player[]{playerOne, playerTwo});
                 attempts = 0;
-                convertedAttempts=10;
+                convertedAttempts = 10;
                 break;
             }
             inputOfNumber(playerOne);
@@ -57,13 +58,9 @@ public class GuessNumber {
 
     public void setMasNullForAll(Player[] players) {
         for (Player player : players) {
-            player.setMas(new int[]{0,0,0,0,0,0,0,0,0,0});
+            player.setMas(new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0});
         }
     }
-
-    public int[] mas;
-    public String end = "";
-    String[] nums;
 
     public void setMasOfNumbers(Player[] players, int lenght) {
         for (Player player : players) {
@@ -73,19 +70,13 @@ public class GuessNumber {
         }
     }
 
-    public String getAttempts(Player player, int attempts) {
-        return Arrays.toString(Arrays.copyOf(player.getMas(), attempts));
-    }
-
     public StringBuilder str = new StringBuilder();
 
     public String getArrayOfAttemptsToOut(Player player) {
         str.append("( | ");
         int[] array = player.getMas();
         for (int anArray : array) {
-            if (anArray != 0) {
-                str.append(anArray + " | ");
-            }
+            if (anArray != 0) str.append(anArray + " | ");
         }
         str.append(")");
         return str.toString();
