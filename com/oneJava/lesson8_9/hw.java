@@ -1,7 +1,10 @@
 package com.oneJava.lesson8_9;
 
 import java.util.ArrayList;
-
+/*Задача: объяснить, почему 2 и 1.
+V 1.0:
+-> Программа создана.
+* */
 public class hw {
 
     public static void main(String[] args){
