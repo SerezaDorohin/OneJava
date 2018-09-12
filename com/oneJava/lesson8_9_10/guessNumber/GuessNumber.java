@@ -1,6 +1,5 @@
-package com.oneJava.lesson8_9.guessNumber;
+package com.oneJava.lesson8_9_10.guessNumber;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 

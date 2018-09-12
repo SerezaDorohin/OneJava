@@ -1,4 +1,4 @@
-package com.oneJava.lesson8_9;
+package com.oneJava.lesson8_9_10;
 
 import java.util.ArrayList;
 /*Задача: объяснить, почему 2 и 1.

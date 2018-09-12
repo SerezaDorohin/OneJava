@@ -1,11 +1,13 @@
-package com.oneJava.lesson8_9.guessNumber;
+package com.oneJava.lesson8_9_10.guessNumber;
 
 import java.util.Scanner;
 /*Задача: добавить функционал в данный код.
-V 3.0:
+V 2.0:
 -> Убраны некоторые неполадки, баги.
 -> Главный класс разгружен.
 -> Переработана система выхода для экономии места.
+V 1.0:
+-> Программа модифицирована.
 * */
 public class GuessNumberTest {
     static Scanner sc = new Scanner(System.in);
