@@ -2,6 +2,10 @@ package com.oneJava.lesson2_3_4.game;
 
 import java.util.Scanner;
 
+/*
+* Сделать программу для угадывания чисел с выводом всех попыток
+*/
+
 public class GuessNumberTest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

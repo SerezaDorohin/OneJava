@@ -1,7 +1,9 @@
 package com.oneJava.lesson2_3_4.calculator;
 
 import java.util.Scanner;
-
+/*
+* Создать калькулятор.
+*/
 public class CalculatorTest {
     static Scanner sc = new Scanner(System.in);
     static Calculator calculator = new Calculator();

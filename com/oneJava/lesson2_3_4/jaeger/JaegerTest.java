@@ -1,5 +1,9 @@
 package com.oneJava.lesson2_3_4.jaeger;
 
+/*
+* Создать программу для вывода характеристик роботов, используя 2 класса: Jaeger и JaegerTest.
+* */
+
 public class JaegerTest {
     public static void main(String[] args) {
         Jaeger jaeger1 = new Jaeger(
