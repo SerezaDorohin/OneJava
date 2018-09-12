@@ -2,6 +2,9 @@ package com.oneJava.lesson8_9_10.guessNumber;
 
 import java.util.Scanner;
 /*Задача: добавить функционал в данный код.
+V 2.1:
+-> Система ввода имени изменена.
+-> Уменьшено кол-во кода.
 V 2.0:
 -> Убраны некоторые неполадки, баги.
 -> Главный класс разгружен.
@@ -22,12 +25,8 @@ public class GuessNumberTest {
     }
 
     public static Player[] getPlayer() {
-        System.out.println("У вас 10 попыток!");
-        System.out.print("Первый игрок вводит имя: ");
-        Player playerOne = new Player(sc.next());
-        System.out.print("Второй игрок вводит имя: ");
-        Player playerTwo = new Player(sc.next());
-        return new Player[]{playerOne, playerTwo};
+        System.out.print("Введите ваши имена через пробел[имя_игрока_1 <ПРОБЕЛ> имя_игрока_2]: ");
+        return new Player[]{new Player(sc.next()),new Player(sc.next())};
     }
 
     public static void testEnd() {
