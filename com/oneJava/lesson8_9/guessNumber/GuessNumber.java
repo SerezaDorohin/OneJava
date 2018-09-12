@@ -18,6 +18,7 @@ public class GuessNumber {
     public int convertedAttempts = 10;
 
     public void play() {
+        str.replace(0,str.length(),"");
         thoughtNumber = (int) (Math.random() * 100);
         System.out.println("Подсказка, число загаданное компьютером равно " + thoughtNumber);
         setMasNullForAll(new Player[]{playerOne, playerTwo});
