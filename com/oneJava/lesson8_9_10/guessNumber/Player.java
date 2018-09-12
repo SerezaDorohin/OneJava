@@ -5,10 +5,6 @@ public class Player {
     private int number;
     private int[] mas;
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int[] getMas() {
         return mas;
     }
