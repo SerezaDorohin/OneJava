@@ -1,6 +1,7 @@
 package com.oneJava.lesson8_9_10.guessNumber;
 
 import java.util.Scanner;
+
 /*Задача: добавить функционал в данный код.
 V 2.1:
 -> Система ввода имени изменена.
@@ -12,6 +13,7 @@ V 2.0:
 V 1.0:
 -> Программа модифицирована.
 * */
+
 public class GuessNumberTest {
     static Scanner sc = new Scanner(System.in);
 
