@@ -1,0 +1,1 @@
+SELECT * FROM github_table WHERE status = 'Destroyed';

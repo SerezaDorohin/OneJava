@@ -1,21 +1,25 @@
 package com.oneJava.lesson20.exchangeMoney;
 
+import java.util.Optional;
+
 /**
  * @author SergeyDorohin;
- * @version 1.2(IT IS NOT WORKING);
+ * @version 1.3(working version);
  * @task Избавиться от переменной indexOfCoin;
- * @type Домашняя работа;
+ */
+
+/*
+ * В задаче использовал иные номиналы монет: 1, 2, 5, 10, 20, 40. (5 * 2 = 10 * 2 = 20 * 2 = 40 - по такой логике)
  */
 
 public class ExchangeMoney {
-    private static int[] COINS_NOM = {1, 5, 10, 25, 50};
-
     public static int getCountOfWays(int money) {
-        return getCountOfWays(money, 4);
+        if(money <= 0) { return 0; }
+        return getCountOfWays(money, 40);
     }
-    private static int getCountOfWays(int money, int indexOfCoin) {
-        if (money < 0 || indexOfCoin < 0) return 0;
-        if (money == 0 || indexOfCoin == 0) return 1;
-        return getCountOfWays(money, indexOfCoin - 1) + getCountOfWays(money - COINS_NOM[indexOfCoin], indexOfCoin);
+    private static int getCountOfWays(int money, int coin) {
+        if (money < 0 || coin < 0) return 0;
+        if (money == 0 || coin == 0) return 1;
+        return getCountOfWays(money, coin / 2) + getCountOfWays(money - coin - 1, coin / 2);
     }
 }
