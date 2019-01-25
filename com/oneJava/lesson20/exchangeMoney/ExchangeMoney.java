@@ -1,7 +1,5 @@
 package com.oneJava.lesson20.exchangeMoney;
 
-import java.util.Optional;
-
 /**
  * @author SergeyDorohin;
  * @version 1.3(working version);
@@ -9,12 +7,12 @@ import java.util.Optional;
  */
 
 /*
- * В задаче использовал иные номиналы монет: 1, 2, 5, 10, 20, 40. (5 * 2 = 10 * 2 = 20 * 2 = 40 - по такой логике)
+ * В задаче использовал иные номиналы монет: 1, 2, 5, 10, 20, 40. (40 / 2 -> 20 / 2 -> 10 / 2 -> 5 / 2 -> 2 / 2 -> 1 - по такой логике)
  */
 
 public class ExchangeMoney {
     public static int getCountOfWays(int money) {
-        if(money <= 0) { return 0; }
+        if(money <= 0) return 0;
         return getCountOfWays(money, 40);
     }
     private static int getCountOfWays(int money, int coin) {
