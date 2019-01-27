@@ -1,11 +1,21 @@
 package com.oneJava.lesson21.OOP;
 
-class Parent {}
-class Child extends Parent {}
-class ChildA extends Parent {}
-class ChildB extends Parent {}
 public class App {
+    public static int a;
+    public int b;
+    public int c;
+
+    public App() {
+        a++;
+        b++;
+        c = a + b;
+    }
     public static void main(String[] args) {
-        Parent ref = (Parent) new Child();
+        App app0 = new App();
+        System.out.println(app0.a);
+        App app1 = new App();
+        System.out.println(app1.a);
+        App app2 = new App();
+        System.out.println(app2.a);
     }
 }
