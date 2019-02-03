@@ -62,8 +62,8 @@ public class SnakeGame {
         buttonExit.setText("выйти из игры");
         buttonStart.setText("начать");
         panel.add(label);
-        panel.add(buttonStart);
         panel.add(buttonExit);
+        panel.add(buttonStart);
         start.add(panel);
         start.setVisible(true);
     }
