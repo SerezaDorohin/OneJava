@@ -2,8 +2,8 @@ package com.oneJava.lesson22.roles;
 
 public class RoleAssigner {
     String printTextPerRole(String[] roles, String[] textLines) {
-        StringBuilder end = new StringBuilder();
         String[] authors = new String[textLines.length];
+        StringBuilder end = new StringBuilder();
         int[] pos = new int[textLines.length];
         for(int i = 0; i < textLines.length; i++) {
             authors[i] = textLines[i].split(":")[0];

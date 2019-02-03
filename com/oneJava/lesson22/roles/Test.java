@@ -21,7 +21,6 @@ public class Test {
                 "Аммос Федорович: Вот те на!",
                 "Артемий Филиппович: Вот не было заботы, так подай!",
                 "Лука Лукич: Господи боже! еще и с секретным предписаньем!"};
-        String output = roleAssigner.printTextPerRole(roles, textLines);
-        System.out.println(output);
+        System.out.println(roleAssigner.printTextPerRole(roles, textLines));
     }
 }
