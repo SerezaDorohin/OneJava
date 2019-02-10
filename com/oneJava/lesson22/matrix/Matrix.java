@@ -1,6 +1,7 @@
 package com.oneJava.lesson22.matrix;
 
 public class Matrix {
+
     int[][] matrix;
 
     public int[][] getMatrix() {
@@ -18,4 +19,5 @@ public class Matrix {
     public int getWidth() {
         return matrix.length;
     }
+
 }

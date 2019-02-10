@@ -6,7 +6,7 @@ package com.oneJava.lesson22.matrix;
  * @type homework;
  */
 
-// Задача: Реализовать метод, умножающий две 2-мерные матрицы (не обязательно квадратные).
+// Р—Р°РґР°С‡Р°: Р РµР°Р»РёР·РѕРІР°С‚СЊ РјРµС‚РѕРґ, СѓРјРЅРѕР¶Р°СЋС‰РёР№ РґРІРµ 2-РјРµСЂРЅС‹Рµ РјР°С‚СЂРёС†С‹ (РЅРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РєРІР°РґСЂР°С‚РЅС‹Рµ).
 
 public class MatrixUtils {
     public static void main(String[] args) {
@@ -40,7 +40,7 @@ public class MatrixUtils {
         matrix2.setMatrix(matrix2fill);
 
         int[][] result = run(matrix1, matrix2);
-        String decryptedArray = decrypter(result);
+        String decryptedArray = decryptor(result);
         System.out.println(decryptedArray);
     }
 
@@ -64,7 +64,7 @@ public class MatrixUtils {
         return result;
     }
 
-    private String decrypter(int[][] encryptedArray) {
+    private String decryptor(int[][] encryptedArray) {
         StringBuilder stringBuilder = new StringBuilder();
         for(int n = 0; n < encryptedArray.length; n++) {
             for (int i = 0; i < encryptedArray[0].length; i++) {
