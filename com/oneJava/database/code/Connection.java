@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class Connection {
 
-    // од не работает
+    // РєРѕРґ РЅРµ СЂР°Р±РѕС‚Р°РµС‚
 
     private static final String DB_URL = "jdbc:postgresql://127.0.0.1:5432/OneJava";
     private static final String USER = "postgres";

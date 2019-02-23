@@ -4,6 +4,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class Demo_3 {
+
     public static <T, U> Function<T, U> ternaryOperatorFirst(
         Predicate<? super T> condition,
         Function<? super T, ? extends U> ifTrue,
@@ -28,4 +29,5 @@ public class Demo_3 {
         return func;
 
     }
+
 }

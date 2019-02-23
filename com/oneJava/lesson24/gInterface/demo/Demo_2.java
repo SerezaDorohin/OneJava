@@ -6,6 +6,7 @@ import java.util.function.IntFunction;
 import java.util.function.ToIntFunction;
 
 public class Demo_2 {
+
     ToIntFunction<String> intParser =
             Integer::parseInt;
 
@@ -17,4 +18,5 @@ public class Demo_2 {
 
     IntFunction<String[]> arrayAllocator =
             String[]::new;
+
 }

@@ -1,6 +1,7 @@
 package com.oneJava.lesson24.homework.lambda;
 
 public class Main {
+
     public static void main(String[] args) {
         Operation operation = (d1, d2) -> d1 / d2;
         Printer printer = str -> System.out.println(str);
@@ -17,4 +18,5 @@ public class Main {
         printer.println("Printer test");
         System.out.println("Factorial: " + factorial.getResult(5));
     }
+
 }

@@ -4,6 +4,7 @@ import java.util.function.IntSupplier;
 import java.util.function.IntUnaryOperator;
 
 public class Demo_1 {
+
     private int counter;
 
     public void foo() {}
@@ -13,4 +14,5 @@ public class Demo_1 {
 
     int bonus = 10;
     IntUnaryOperator bonusAdder = (x) -> x + bonus;
+
 }

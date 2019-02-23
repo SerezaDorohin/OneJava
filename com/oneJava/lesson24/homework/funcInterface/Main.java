@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.function.*;
 
 public class Main {
+
     public static void main(String[] args) {
         Operation<Integer> addition = (v1, v2) -> v1 + v2;
         System.out.println(addition.getValue(2, 7));
@@ -39,4 +40,5 @@ public class Main {
         BinaryOperator<Double> pow = (v1, v2) -> Math.pow(v1, v2);
         System.out.println(pow.apply(2.0, 2.0));
     }
+
 }
